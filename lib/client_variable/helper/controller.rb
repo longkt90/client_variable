@@ -4,7 +4,7 @@ module ClientVariable
       def self.included base
         base.send(:include, InstanceMethods)
         base.class_eval do
-          before_filter :client
+          before_action :client
         end
 
       end

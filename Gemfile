@@ -2,7 +2,7 @@ source 'https://rubygems.org'
 
 gemspec
 
-gem 'rails', '~> 3.0.0'
+gem 'rails', '~> 5.0.0'
 
 group :test do
   gem 'coveralls', :require => false
@@ -14,9 +14,8 @@ group :test do
 end
 
 group :development, :test do
-  gem 'debugger'
   gem 'pry'
-  gem 'pry-debugger'
+  gem 'pry-byebug'
   gem 'pry-stack_explorer'
   gem 'pry-rails'
   gem 'pry-remote'
